@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculator {
+    background-color: #333; /* Dark background for the calculator body */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 320px;
+    padding: 20px;
+    max-width: 90%; /* Ensure responsiveness on smaller screens */
+}
+
+.display {
+    background-color: #222; /* Even darker for display */
+    color: #fff;
+    font-size: 3em;
+    padding: 20px;
+    text-align: right;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 1.2em; /* Ensure consistent height */
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #555; /* Default button color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    outline: none;
+    user-select: none; /* Prevent text selection on button press */
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Red theme for specific buttons */
+.operator, .equals {
+    background-color: #e74c3c; /* Bright red */
+}
+
+.operator:hover, .equals:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.clear, .delete {
+    background-color: #f39c12; /* Orange for clear/delete */
+}
+
+.clear:hover, .delete:hover {
+    background-color: #e67e22; /* Darker orange */
+}
+
+.span-two {
+    grid-column: span 2;
+}

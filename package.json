@@ -1,0 +1,24 @@
+{
+  "name": "simple-red-calculator",
+  "version": "1.0.0",
+  "description": "A simple client-side calculator with a red theme.",
+  "main": "script.js",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser or use a local HTTP server like live-server.'",
+    "serve": "npx live-server .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "calculator",
+    "javascript",
+    "html",
+    "css",
+    "red",
+    "simple"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
